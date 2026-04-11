@@ -6,9 +6,9 @@ A full-stack task manager application where users can create, update, and delete
 
 ## 🛠 Tech Stack
 
-* Frontend: React (Vite)
-* Backend: Node.js, Express
-* Database: (MongoDB / Local / etc.)
+* Frontend: React (Vite),Html,Css,JS
+* Backend: Node.js, Express,Authentication
+* Database: (MongoDB / Postgres / etc.)
 
 ## ✨ Features
 
@@ -30,7 +30,7 @@ git clone https://github.com/TejasChaudhari-30/Task-Manager-App.git
 
 cd backend
 npm install
-npm start
+npx node (or nodemon) src/index.js
 
 ### 3. Setup Frontend
 
