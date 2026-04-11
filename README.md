@@ -30,7 +30,7 @@ git clone https://github.com/TejasChaudhari-30/Task-Manager-App.git
 
 cd backend
 npm install
-npx node (or nodemon) src/index.js
+npm Start
 
 ### 3. Setup Frontend
 
