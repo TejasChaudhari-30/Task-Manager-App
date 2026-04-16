@@ -10,7 +10,7 @@ import { limiter, apiLimiter } from "./util/limiter.js";
 
 
 
-db.connect();
+
 dotenv.config();
 
 console.log(process.env.Admin_email);
