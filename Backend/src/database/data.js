@@ -1,19 +1,25 @@
-import pg from "pg";
+import {Pool} from "pg";
 import dotenv from "dotenv"
 
 dotenv.config();
 
-const db=new pg.Client({
-      connectionString:process.env.DataBase_URL,
-      ssl:{
-        rejectUnauthorized:false,
-      }
-  //     user:"postgres",
-  // host:"localhost",
-  // database:"Fullstack",
-  // password:process.env.data_pass,
-  // port:5432
+const db = new Pool({
+    connectionString: process.env.DATABASE_URL,
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
-await db.connect();
+// const db=new pg.Client({
+//       // connectionString:process.env.DataBase_URL,
+//       // ssl:{
+//       //   rejectUnauthorized:false,
+//       // }
+//       user:"postgres",
+//   host:"localhost",
+//   database:"Fullstack",
+//   password:process.env.data_pass,
+//   port:5432
+// });
+
 
 export default db;

@@ -11,7 +11,7 @@ export const authmiddleware=(req,res,next)=>{
      console.log(authheader);
 const token = authheader.split(" ")[1]; 
 console.log(token);
- jwt.verify(token,process.env.JWT_secret,(err,decoded)=>{
+ jwt.verify(token,process.env.JWT_secret,(err,decoded)=>{ //verify the jwttoken store in local storage 
     if(err){
          return res.status(403).json({ message: "Token expired or invalid" });
     }
