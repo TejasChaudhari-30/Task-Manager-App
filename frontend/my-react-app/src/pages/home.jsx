@@ -1,5 +1,6 @@
 import Navbar from "../components/navbar";
 import "../Home_page.css";
+import { Link } from "react-router-dom";
 
 function Home_page() {
   return (
@@ -14,7 +15,9 @@ function Home_page() {
           Manage your tasks, track your progress, and boost your productivity — all in one simple and powerful platform.
         </p>
 
-        <a href="/dashboard" className="btn">Get Started</a>
+      <Link to="/dashboard" className="btn">
+  Get Started
+</Link>
       </div>
 
       {/* ABOUT SECTION */}
