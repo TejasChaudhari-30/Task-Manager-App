@@ -81,6 +81,9 @@ AND t.due_date = $1`, [today]
     }
 });
 
+app.get("/", (req, res) => {
+    res.send("Backend is running successfully!");
+});
 
 app.listen(port, () => {
     console.log("Server is listening on port ", port);
