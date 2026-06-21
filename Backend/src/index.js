@@ -32,7 +32,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true})); // we can use nested object
 // app.use(limiter);
 
-app.use(corsmiddleware);
+app.use(corsmiddleware); 
 app.use("/api/auth", limiter, router)
 app.use("/api/task", apiLimiter, router1)
 
