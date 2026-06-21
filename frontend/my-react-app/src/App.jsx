@@ -11,6 +11,7 @@ import About from "./pages/about.jsx";
 import { Analytics } from '@vercel/analytics/react'
 function App() {
  return (
+   <>
     <Routes>
        <Route path="/" element={<Home_page/>} /> 
        <Route path="/login" element={<Login/>}/>;
@@ -20,9 +21,11 @@ function App() {
        <Route path="/edit" element={<Edit_task/>}/>;
        <Route path="/about" element={<About/>}/>;
 
-      <Analytics/>
+     
 
     </Routes>
+     <Analytics/>
+     </>
  )
 }
 
