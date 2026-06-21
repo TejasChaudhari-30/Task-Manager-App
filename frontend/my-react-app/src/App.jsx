@@ -8,7 +8,6 @@ import Addtask from "./components/addtask.jsx";
 import Edit_task from "./components/edit_task.jsx";
 import Home_page from "./pages/home.jsx";
 import About from "./pages/about.jsx";
-import { Analytics } from '@vercel/analytics/react'
 function App() {
  return (
    <>
@@ -24,7 +23,6 @@ function App() {
      
 
     </Routes>
-     <Analytics/>
      </>
  )
 }
