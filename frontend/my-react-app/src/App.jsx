@@ -8,7 +8,7 @@ import Addtask from "./components/addtask.jsx";
 import Edit_task from "./components/edit_task.jsx";
 import Home_page from "./pages/home.jsx";
 import About from "./pages/about.jsx";
-
+import { Analytics } from '@vercel/analytics/react'
 function App() {
  return (
     <Routes>
@@ -20,7 +20,7 @@ function App() {
        <Route path="/edit" element={<Edit_task/>}/>;
        <Route path="/about" element={<About/>}/>;
 
-
+      <Analytics/>
 
     </Routes>
  )
